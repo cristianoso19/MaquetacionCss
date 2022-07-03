@@ -14,6 +14,10 @@ body{
   left: 0;
   right: 0;
 }
+.grid-container{
+  margin: 0 auto;
+  max-width: 980px;
+}
 a{
   text-decoration: none;
   display: inline;
@@ -97,13 +101,15 @@ main .hero-button{
   font-weight: 700;
   padding-top: 8px;
 }
+.news{
+  background-color: #E6E9ED;
+}
 main .last-news-container {
   margin-top: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 50px;
-  background-color: #E6E9ED;
 }
 .news-last-post {
   margin-top: 30px;
@@ -138,8 +144,10 @@ main .last-news-container {
   font-size: 12px;
   font-weight: 700;
 }
-.news-last-post__section-title{
+.last-blogs__section-title{
   margin: 30px auto;
+  font-size: 23px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -169,7 +177,7 @@ main .last-news-container {
   margin-bottom: 30px;
 }
 .blog-article img{
-  width: 270px;
+  width: 100%;
 } 
 footer .divisor{
   width: 100%;
