@@ -1,8 +1,14 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
 body{
   font-family: 'Roboto mono', monospace;
   margin: 0;
   padding: 0;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   bottom: 0;
   left: 0;
@@ -100,34 +106,83 @@ main .last-news-container {
   background-color: #E6E9ED;
 }
 .news-last-post {
+  margin-top: 30px;
   margin-left: 125px;
   margin-bottom: 40px;
 }
-.news-last-post .news-last-post__section-title{
-  margin-left: 0;
+.news-last-post__section-title{
   font-size: 23px;
   font-weight: 700;
 }
-.news-last-post figure{
-  margin: 0;
-}
 .news-last-post .news-last-post__img img{
+  margin-top: 20px;
   width: 450px;
   height: 300px;
 } 
 .news-last-blog{
   align-self: center;
-  margin: 0 auto;
   margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
 }
-.news-last-blog__button{
+.news-last-blog p{
+  margin: 20px 0;
+} 
+.blog-more__button{
   display: table-cell;
-  width: 120px;
-  height: 45px;
+  width: 90px;
+  height: 40px;
   border: 1px solid #48CFAD;
   text-align: center;
   vertical-align: middle;
+  font-size: 12px;
   font-weight: 700;
+}
+.news-last-post__section-title{
+  margin: 30px auto;
+  text-align: center;
+}
+
+.last-blogs-container{
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  justify-content: center;
+  gap: 15px;
+
+}
+.last-blogs-container hr{
+  margin: 20px auto;
+  width: 80px;
+}
+.blog-article{
+  justify-self: center;
+  margin-bottom: 30px;
+}
+.blog-article p{
+  margin: 15px 0;
+  font-weight: 500;
+} 
+.blog-article p:nth-child(2){
+  margin-bottom: 30px;
+}
+.blog-article img{
+  width: 270px;
+} 
+footer .divisor{
+  width: 100%;
+  height: 30px;
+  background-color: #47cfac;
+}
+footer .footer-description{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22272D;
+  color: white;
+
 }
